@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#403E3E"
+    android:textAlignment="center"
+    tools:context=".ShowDriverActivity">
+
+    <TextView
+        android:id="@+id/dienst_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:text="Dienst:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dienst_tf_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="SB 11 - 14" />
+
+    <TextView
+        android:id="@+id/kursNr_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:text="Kurs Nummer:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dienst_tf" />
+
+    <TextView
+        android:id="@+id/kursNr_tf_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dienst_tf_anzeige"
+        tools:text="2041 / 2045" />
+
+    <TextView
+        android:id="@+id/zielschildNr_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:text="Zielschild Nummer:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kursNr_tf" />
+
+    <TextView
+        android:id="@+id/zielschildNr_tf_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kursNr_tf_anzeige"
+        tools:text="43" />
+
+    <TextView
+        android:id="@+id/zeilschild_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:text="Anzeige:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zielschildNr_tf" />
+
+    <TextView
+        android:id="@+id/zielschild_tf_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zielschildNr_tf_anzeige"
+        tools:text="Graz" />
+
+    <TextView
+        android:id="@+id/aktuelleHaltestelle_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zeilschild_tf"
+        android:text="Aktuelle Haltestelle:" />
+
+    <TextView
+        android:id="@+id/aktuelleHaltestelle_tf_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zielschild_tf_anzeige"
+        tools:text="Stainz Hauptplatz" />
+
+    <TextView
+        android:id="@+id/zelliskroNr_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aktuelleHaltestelle_tf"
+        android:text="Zellisko Nummer:" />
+
+    <TextView
+        android:id="@+id/zeliskoNr_tf_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aktuelleHaltestelle_tf_anzeige"
+        tools:text="986" />
+
+    <TextView
+        android:id="@+id/aktuelleZeit_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:text="Aktuelle Zeit: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zelliskroNr_tf" />
+
+    <TextView
+        android:id="@+id/aktuelleZeit_tf_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zeliskoNr_tf_anzeige"
+        tools:text="06:31:00" />
+
+    <TextView
+        android:id="@+id/sollZeit_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:text="Soll Zeit: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aktuelleZeit_tf" />
+
+    <TextView
+        android:id="@+id/sollZeit_tf_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#B0B0B1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aktuelleZeit_tf_anzeige"
+        tools:text="06:30:00" />
+
+    <Button
+        android:id="@+id/naechste_HaltestelleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/differenz_tf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/vorrige_HaltestelleBtn"
+        app:layout_constraintTop_toBottomOf="@+id/sollZeit_tf_anzeige" />
+
+    <Button
+        android:id="@+id/vorrige_HaltestelleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/differenz_tf"
+        app:layout_constraintEnd_toStartOf="@+id/naechste_HaltestelleBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sollZeit_tf" />
+
+    <TextView
+        android:id="@+id/differenz_tf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sollZeit_tf"
+        android:text="Differenz:" />
+
+    <TextView
+        android:id="@+id/differenz_tf_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/personenZaehler"
+        app:layout_constraintEnd_toEndOf="@+id/differenz_tf"
+        app:layout_constraintStart_toStartOf="@+id/differenz_tf"
+        app:layout_constraintTop_toBottomOf="@+id/differenz_tf"
+        tools:text="+:00:00:00" />
+
+    <TextView
+        android:id="@+id/personenZaehler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/differenz_tf"
+        android:text="Maximale Fahrgäste Anzahl" />
+
+    <TextView
+        android:id="@+id/person_anzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personenZaehler"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/person_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/person_anzeige"
+        app:layout_constraintEnd_toStartOf="@+id/person_plus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/person_anzeige" />
+
+    <Button
+        android:id="@+id/person_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/person_anzeige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/person_minus"
+        app:layout_constraintTop_toTopOf="@+id/person_anzeige" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

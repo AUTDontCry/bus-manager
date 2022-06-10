@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "444276162174",
+    "firebase_url": "https://busapp-fca54-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "busapp-fca54",
+    "storage_bucket": "busapp-fca54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444276162174:android:eded243624fb9a961a222f",
+        "android_client_info": {
+          "package_name": "at.wifi.swdev.saschabrodschneider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444276162174-peg3lh51p4fhmjemuqtt2qfv6m46qln7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfU7fwnha8l7V-A_AiMhYb-An_g98VX8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444276162174-peg3lh51p4fhmjemuqtt2qfv6m46qln7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
